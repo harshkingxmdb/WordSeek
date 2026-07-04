@@ -35,6 +35,12 @@
   ```
 - **/stats** - View bot usage stats (admin users only).
 
+## Deploy
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/harshkingxmdb/WordSeek)
+
+Clicking the button will provision a Heroku app with a Postgres database, a Redis instance, and prompt you for the required environment variables (bot token, admin users, etc.). The bot runs as a Heroku **worker** dyno (not a web dyno), since it uses long-polling instead of webhooks.
+
 ## Installation & Setup
 
 ### Requirements
