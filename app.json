@@ -1,7 +1,8 @@
 {
   "name": "WordSeek",
   "description": "A Wordle-inspired word guessing Telegram bot",
-  "repository": "https://github.com/harshkingxmdb/WordSeek",
+  "repository": "https://github.com/binamralamsal/WordSeek",
+  "keywords": ["telegram", "bot", "wordle", "game", "bun"],
   "buildpacks": [
     { "url": "https://github.com/jakeg/heroku-buildpack-bun" }
   ],
@@ -12,10 +13,12 @@
   "env": {
     "BOT_TOKEN": {
       "description": "Your Telegram Bot Token from @BotFather",
+      "value": "",
       "required": true
     },
     "DAILY_WORDLE_SECRET": {
       "description": "Secret key for daily Wordle signature/verification",
+      "value": "",
       "required": true
     },
     "DAILY_WORDLE_START_DATE": {
@@ -28,6 +31,7 @@
     },
     "ADMIN_USERS": {
       "description": "Comma-separated list of Telegram User IDs with admin privileges",
+      "value": "",
       "required": true
     },
     "TIME_ZONE": {
@@ -36,25 +40,28 @@
     },
     "SUGGESTIONS_CHANNEL": {
       "description": "Suggested words channel (optional)",
+      "value": "",
       "required": false
     },
     "LOGS_CHANNEL": {
       "description": "Bot logs channel (optional)",
+      "value": "",
       "required": false
     },
     "GEMINI_API_KEYS": {
       "description": "Gemini API keys, comma separated if multiple (optional)",
+      "value": "",
       "required": false
     }
   },
   "formation": {
     "release": {
       "quantity": 1,
-      "size": "eco"
+      "size": "basic"
     },
     "worker": {
       "quantity": 1,
-      "size": "eco"
+      "size": "basic"
     }
   }
-}
+  }
