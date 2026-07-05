@@ -56,8 +56,5 @@
       "quantity": 1,
       "size": "eco"
     }
-  },
-  "scripts": {
-    "postdeploy": "bun run db:migrate latest"
   }
 }
