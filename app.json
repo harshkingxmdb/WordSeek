@@ -55,10 +55,6 @@
     }
   },
   "formation": {
-    "release": {
-      "quantity": 1,
-      "size": "basic"
-    },
     "worker": {
       "quantity": 1,
       "size": "basic"
